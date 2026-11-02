@@ -1,0 +1,40 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.pytest_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.egg-info/
+build/
+dist/
+
+# Downloaded models and experiment outputs
+secalign_refactored/secalign_models/
+/logs/
+/exp/logs/
+/results/*
+!/results/abc/
+*.log
+*.out
+*.pkl
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.db
+*.dat
+*.dir
+*.bak
+.texlive/
+
+# Publish the retained ABC experiment results
+!/results/abc/logs/**/*.log
+!/results/abc/logs/**/*.dat
+!/results/abc/logs/**/*.dir
+!/results/abc/logs/**/*.bak

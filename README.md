@@ -17,7 +17,7 @@ The implementation supports classification and generation experiments. Its loss 
 
 ## Threat Model
 
-![ABC threat model: a potentially malicious hosting provider poisons ICL demonstrations while keeping the hosted model weights unchanged.](assets/threat_model.png)
+![ABC threat model: a potentially malicious hosting provider poisons ICL demonstrations while keeping the hosted model weights unchanged.](figure/threat_model.png)
 
 We consider a potentially malicious third-party hosting provider with white-box access to the victim model and control over its ICL demonstrations. The attacker can compute gradients and construct poisoned demonstrations, but is restricted to the demonstration channel: model weights, architecture, system instructions, user queries, and generated outputs are not directly modified. The attack aims to induce the target response when a user query contains the trigger.
 
